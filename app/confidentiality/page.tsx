@@ -1,0 +1,19 @@
+import type { Metadata } from "next";
+import LegalPage, { LegalSection } from "../components/LegalPage";
+
+export const metadata: Metadata = { title: "Confidentiality Standard", description: "How PhD Forward controls access, sharing, retention and disclosure of research material.", alternates: { canonical: "/confidentiality" } };
+
+export default function ConfidentialityPage() {
+  return <LegalPage eyebrow="Confidentiality standard" title="Quiet handling is part of research quality." intro="Confidentiality is designed into enquiry, scoping, delivery, review, retention and deletion—not added after a document is shared.">
+    <LegalSection title="1. Before engagement"><p>The open enquiry and WhatsApp routes are for a summary of the problem, not full research files, patient information or restricted data. We first confirm fit, authorised contacts and the transfer route. A mutual NDA can be considered before substantive disclosure.</p></LegalSection>
+    <LegalSection title="2. Need-to-know access"><p>Only personnel assigned to the engagement may access its material. A five-person core delivery team coordinates work from a wider specialist network; not every team member receives every file. Specialist access is limited to the minimum material needed for the stated task.</p></LegalSection>
+    <LegalSection title="3. Secure transfer and storage"><p>Approved workspaces use encrypted transport, controlled links, access expiry, role-based permissions and activity records. Email attachments and consumer messaging are avoided for high-risk files when a secure workspace is available. Malware and file-type checks may be applied before storage.</p></LegalSection>
+    <LegalSection title="4. Restricted material"><p>Do not send identifiable patient information, examination material, institutional secrets, export-controlled information, unlawfully obtained datasets or third-party confidential material without written authority and an agreed handling plan. We may require de-identification or decline the material.</p></LegalSection>
+    <LegalSection title="5. Team obligations"><p>Employees, specialists and processors are bound by confidentiality and acceptable-use duties. They may not reuse client content for teaching, training, portfolios, demonstrations, publications or other clients without explicit written permission.</p></LegalSection>
+    <LegalSection title="6. Public proof and testimonials"><p>No thesis, manuscript, DOI, identity, testimonial, outcome or before-and-after example is published merely because we supported it. Separate, specific and revocable consent is required. Consent to service is not consent to publicity.</p></LegalSection>
+    <LegalSection title="7. Retention and deletion"><p>Working files are normally retained for 180 days after the milestone closes to support agreed review, then removed from active systems unless the service schedule, law or dispute requires otherwise. Backup deletion follows the backup cycle. You may request earlier deletion where no legal or contractual need prevents it.</p></LegalSection>
+    <LegalSection title="8. Necessary disclosure"><p>Information may be disclosed where required by law, court order, tax duty, security investigation or defence of legal claims. Where lawful and practicable, we will limit disclosure and notify the affected client.</p></LegalSection>
+    <LegalSection title="9. Incident response"><p>Suspected unauthorised access is contained, investigated, documented and remediated. Affected persons and authorities will be notified where applicable law requires it. Report a concern immediately to support@aristocratresearch.com.</p></LegalSection>
+    <LegalSection title="10. NDA relationship"><p>This standard is a public operating commitment. A signed NDA and service schedule may add project-specific controls; where they conflict, the more specific signed term governs to the extent permitted by law.</p></LegalSection>
+  </LegalPage>;
+}

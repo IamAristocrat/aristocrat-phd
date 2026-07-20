@@ -1,0 +1,10 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+
+export const metadata: Metadata = { title: "Book a PhD Consultation", description: "Request a private research consultation after completing the PhD Forward diagnosis.", alternates: { canonical: "/book" } };
+
+export default function BookPage() {
+  const calendly = process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/research_support/new-meeting";
+  return <main className="book-page"><header className="site-header"><Link className="brand" href="/"><span className="brand-mark"><Image src="/aristocrat-alpha.png" alt="" width={48} height={48} /></span><span><strong>Aristocrat Research</strong><small>PhD Forward</small></span></Link><nav><Link href="/start">Start</Link><Link href="/confidentiality">Confidentiality</Link></nav><a className="nav-cta" href="https://wa.me/919894595035" target="_blank" rel="noreferrer">WhatsApp ↗</a></header><section className="book-intro"><p className="kicker">Private consultation</p><h1>A useful call begins with the right context.</h1><p>Complete the short diagnosis before booking so the research desk can prepare. Consultations may be handled by the operations lead or research director.</p><Link className="button button-secondary" href="/start">Complete diagnosis first</Link></section>{calendly ? <section className="calendar-shell"><iframe title="Book a PhD Forward consultation" src={calendly} /></section> : <section className="calendar-pending"><span>Scheduling connection reserved</span><h2>The booking calendar will open here after the final consultation URL is authorised.</h2><p>For the current review, request a time through WhatsApp or email. No private calendar credentials are required in chat.</p><div><a className="button button-primary" href="https://wa.me/919894595035" target="_blank" rel="noreferrer">Request a time on WhatsApp ↗</a><a className="text-link" href="mailto:support@aristocratresearch.com">Email the research desk</a></div></section>}</main>;
+}

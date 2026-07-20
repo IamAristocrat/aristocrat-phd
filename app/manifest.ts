@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function manifest(): MetadataRoute.Manifest { return { name: "Aristocrat Research — PhD Forward", short_name: "PhD Forward", description: "Confidential, milestone-led research support for PhD scholars.", start_url: "/", display: "standalone", background_color: "#fffaf8", theme_color: "#b86569", icons: [{ src: "/aristocrat-alpha.png", sizes: "1254x1254", type: "image/png" }] }; }

@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function ReceivedPage() { return <main className="simple-state"><p className="kicker">Enquiry received</p><h1>Your next move is now visible.</h1><p>The research desk will review your brief and target a reply within 24 hours. Do not send confidential files until a secure route is provided.</p><div><Link className="button button-primary" href="/">Return home</Link><Link className="button button-secondary" href="/book">Request a consultation</Link></div></main>; }
