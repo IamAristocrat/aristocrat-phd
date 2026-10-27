@@ -86,7 +86,7 @@ export default function Home() {
           <span><strong>Aristocrat Research</strong><small>PhD Forward</small></span>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#journey">Your journey</a><a href="#services">Support</a><a href="#method">Method</a><Link href="/start">Start</Link>
+          <a href="#journey">Your journey</a><a href="#services">Support</a><a href="#method">Method</a><Link href={whatsappUrl}>Start</Link>
         </nav>
         <a className="nav-cta" href={whatsappUrl} target="_blank" rel="noreferrer">Talk confidentially <span aria-hidden="true">↗</span></a>
       </header>
@@ -98,7 +98,7 @@ export default function Home() {
           <p className="hero-lede">Your doctorate has already asked for years of effort. It should not quietly take the promotion, increment, confidence or family time you worked to protect.</p>
           <p className="hero-support">PhD Forward turns an urgent research block into a verified route—one accountable milestone at a time.</p>
           <div className="hero-actions">
-            <Link className="button button-primary metallic-button" href="/start">Find my next milestone <span aria-hidden="true">→</span></Link>
+            <Link className="button button-primary metallic-button" href={whatsappUrl}>Find my next milestone <span aria-hidden="true">→</span></Link>
             <a className="button button-secondary" href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp the research desk</a>
           </div>
           <div className="hero-assurances"><span>Private by design</span><span>Reply within 24 hours</span><span>Scope before payment</span></div>
@@ -169,11 +169,11 @@ export default function Home() {
 
       <section className="faq-section"><div className="faq-intro"><p className="kicker">Before you engage</p><h2>Clear answers prevent the wrong engagement.</h2></div><div className="faq-list">{faqs.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></section>
 
-      <section className="closing-story"><p className="kicker">The next chapter starts smaller than you think</p><h2>You do not need to solve the whole PhD today.<br /><em>You need the right next milestone.</em></h2><div><Link className="button button-primary metallic-button" href="/start">Start my confidential diagnosis →</Link><Link className="text-link" href="/book">Request a consultation</Link></div></section>
+      <section className="closing-story"><p className="kicker">The next chapter starts smaller than you think</p><h2>You do not need to solve the whole PhD today.<br /><em>You need the right next milestone.</em></h2><div><Link className="button button-primary metallic-button" href={whatsappUrl}>Start my confidential diagnosis →</Link><Link className="text-link" href={whatsappUrl}>Request a consultation</Link></div></section>
 
       <footer>
         <div className="footer-brand"><span className="brand-mark"><Image src="/aristocrat-alpha.png" alt="" width={48} height={48} /></span><div><strong>Aristocrat Research</strong><p>PhD Forward · Your PhD. Progressed.</p></div></div>
-        <div className="footer-links"><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/confidentiality">Confidentiality</Link><Link href="/service-agreement">Service agreement</Link><Link href="/start">Start</Link></div>
+        <div className="footer-links"><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/confidentiality">Confidentiality</Link><Link href="/service-agreement">Service agreement</Link><Link href={whatsappUrl}>Start</Link></div>
         <div className="footer-legal"><p>Headquartered in Chennai. Serving English-language scholars globally.</p><p><a href="mailto:support@aristocratresearch.com">support@aristocratresearch.com</a> · <a href="tel:+919894595035">+91 98945 95035</a></p><p>© 2026 Aristocrat Research</p></div>
       </footer>
       <a className="floating-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Chat with the PhD Forward research desk">WhatsApp</a>

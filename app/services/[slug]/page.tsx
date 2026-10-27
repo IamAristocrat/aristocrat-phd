@@ -39,7 +39,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <p>{service.promise}</p>
           <div className="hero-actions">
             <a className="button button-primary" href={`https://wa.me/919894595035?text=${message}`} target="_blank" rel="noreferrer">Request a confidential diagnosis →</a>
-            <Link className="button button-secondary" href="/#diagnostic">Use the quick diagnostic</Link>
+            <a className="button button-secondary" href={`https://wa.me/919894595035?text=${message}`} target="_blank" rel="noreferrer">Discuss your needs on WhatsApp</a>
           </div>
         </div>
         <aside><span>The pressure</span><p>{service.problem}</p><strong>Response within 24 hours</strong></aside>
