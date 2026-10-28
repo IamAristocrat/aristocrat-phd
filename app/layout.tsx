@@ -32,9 +32,6 @@ export const metadata: Metadata = {
   },
   category: "education",
   keywords: ["PhD support", "thesis support", "research paper publication support", "journal verification", "reviewer response", "viva preparation"],
-  other: {
-    "codex-preview": "development",
-  },
   icons: {
     icon: "/aristocrat-alpha.png",
     shortcut: "/aristocrat-alpha.png",
